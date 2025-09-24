@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.18.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sieve-core-dummy"
+version = "0.1.0"
+description = "Basic utilities for SieveStack applications."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+authors = [{ name = "SieveStack, Inc.", email = "contact@sievestack.com" }]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: Other/Proprietary License",
+]
+
+dependencies = ["requests>=2.28,<3.0"]
+
+[tool.hatch.build]
+include = [
+  "sieve_core_dummy/**",
+  "README.md",
+  "LICENSE*"
+]
+
